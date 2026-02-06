@@ -54,9 +54,9 @@ const Register = () => {
     <div className="auth-container">
       <div className="auth-box">
         <h1>Register</h1>
-        {error && <div className="error-message">{error}</div>}
         
         <form onSubmit={handleSubmit}>
+        {error && <div className="auth-error">{error}</div>}
           <div className="form-group">
             <input
               id="name"
